@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="deG-s0-RZ7" userLabel="Stack Top">
+                                <rect key="frame" x="26" y="74" width="323" height="694"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="asN-mK-dge" userLabel="Stack Dices">
+                                        <rect key="frame" x="91.666666666666686" y="0.0" width="140" height="158.66666666666666"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Four" translatesAutoresizingMaskIntoConstraints="NO" id="MB2-Cd-dSP">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="158.66666666666666"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Six" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-5X-XyW">
+                                                <rect key="frame" x="89.999999999999986" y="0.0" width="50.000000000000014" height="158.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="9er-xS-jl2" userLabel="Stack Buttons">
+                                        <rect key="frame" x="69.666666666666686" y="178.66666666666663" width="184" height="158.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EC-b3-QOg">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="158.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="&lt; 7"/>
+                                                <connections>
+                                                    <action selector="lessThan7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWG-1H-15f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZo-vm-9dO">
+                                                <rect key="frame" x="75.999999999999986" y="0.0" width="32" height="158.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="= 7"/>
+                                                <connections>
+                                                    <action selector="equalTo7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaR-nn-7kr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ms-Cl-3GL">
+                                                <rect key="frame" x="152" y="0.0" width="32" height="158.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="&gt; 7"/>
+                                                <connections>
+                                                    <action selector="greaterThan7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXI-JY-sEO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3A9-hF-DlV" userLabel="Stack Reset">
+                                        <rect key="frame" x="136.66666666666666" y="357" width="50" height="158.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZk-JN-HZW">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="158.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wLT-By-eux"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B3t-r4-zav" userLabel="Stack Label">
+                                        <rect key="frame" x="101.66666666666666" y="535.66666666666663" width="119.66666666666666" height="158.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score = 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36W-Us-0RH">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="158.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="deG-s0-RZ7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3FK-mo-mlo"/>
+                            <constraint firstItem="deG-s0-RZ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="9SW-jo-S21"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="deG-s0-RZ7" secondAttribute="trailing" constant="10" id="BoY-Z9-hWx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="deG-s0-RZ7" secondAttribute="bottom" constant="10" id="bki-6S-HpI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dice1" destination="MB2-Cd-dSP" id="N3H-g4-DAb"/>
+                        <outlet property="dice2" destination="oCD-5X-XyW" id="HJU-Gp-3TX"/>
+                        <outlet property="lblScore" destination="36W-Us-0RH" id="Vac-I0-4Up"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Four" width="50" height="50"/>
+        <image name="Six" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
