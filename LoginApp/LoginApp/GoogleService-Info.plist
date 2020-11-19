@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>213085405899-qpr9u4t7ogblmvh8teminapq00bhc60l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.213085405899-qpr9u4t7ogblmvh8teminapq00bhc60l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAo1DCDxGgB-r8L7oQmfgSm1EYe3GYbpGw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>213085405899</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.northeastern.terry.LoginApp</string>
+	<key>PROJECT_ID</key>
+	<string>fall2020-info6350</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fall2020-info6350.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:213085405899:ios:14cc8a1bd753b8e36bd14e</string>
+	<key>DATABASE_URL</key>
+	<string>https://fall2020-info6350.firebaseio.com</string>
+</dict>
+</plist>
